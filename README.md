@@ -1,4 +1,4 @@
-# Bolideai Ui Kit
+# Bolideai Microservice Share State
 
 ## Описание
 Провайдер для передачи состояний между микрофронтэндами в Module Federation
@@ -22,7 +22,11 @@ import { ShareContextProvider } from 'tool-microfrontend-shared-state';
 ```
 
 В любом дочернем приложении
+```js
+import { ShareContextProvider } from 'tool-microfrontend-shared-state';
 
+const { key, time } = React.useContext(ShareContextProvider);
+```
 
 ## Сборка и обновление
 
