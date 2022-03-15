@@ -1,36 +1,27 @@
 # Bolideai Ui Kit
 
 ## Описание
-Набор кастомных компонентов для приложения Bolideai.
+Провайдер для передачи состояний между микрофронтэндами в Module Federation
 
 ## Установка
 
 ```sh
-npm i tool-bolideai-icons-kit
+npm i tool-microfrontend-shared-state
 ```
 
-### Список доступных компонентов
-Card, ResourceList, PageTitle, Navigation
+### Как использовать?
 
+В родительском приложении:
 ```js
-import { PageTitle } from 'tool-bolideai-ui-kit';
+import { ShareContextProvider } from 'tool-microfrontend-shared-state';
 
-export const App = () => {
-
-    return (
-       <PageTitle label='Dashboard'>
-            <div className="flex space-x-6">
-                <Button
-                    onClick={() => alert('つ ◕_◕ ༽つ')}
-                >
-                    Click on me
-                </Button>
-            </div>
-        </PageTitle>
-    )
-}
+<ShareContextProvider.Provider value={{ key: 12345, time: Date.now() }}>
+    ...
+</ShareContextProvider.Provider>
 
 ```
+
+В любом дочернем приложении
 
 
 ## Сборка и обновление
