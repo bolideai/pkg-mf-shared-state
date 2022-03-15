@@ -1,6 +1,6 @@
 {
     "name": "tool-bolideai-share",
-    "version": "1.0.4",
+    "version": "1.0.0",
     "description": "Library for share state between microfrontends",
     "main": "./dist/index.js",
     "scripts": {
