@@ -1,6 +1,6 @@
 {
-    "name": "tool-microfrontend-shared-state",
-    "version": "1.0.3",
+    "name": "bolideai-mf-shared-state",
+    "version": "1.0.4",
     "description": "Library for share state between microfrontends",
     "main": "./dist/index.js",
     "scripts": {
