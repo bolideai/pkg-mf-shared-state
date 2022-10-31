@@ -1,17 +1,16 @@
 # Bolideai Microservice Share State
 
-## Описание
-Провайдер для передачи состояний между микрофронтэндами в Module Federation
+Provider for passing states between micro-frontends in Module Federation 
 
-## Установка
+## Installation
 
 ```sh
 npm i tool-microfrontend-shared-state
 ```
 
-### Как использовать?
+## Usage
 
-В родительском приложении:
+In parent application:
 ```js
 import { ShareContextProvider } from 'tool-microfrontend-shared-state';
 
@@ -21,25 +20,25 @@ import { ShareContextProvider } from 'tool-microfrontend-shared-state';
 
 ```
 
-В любом дочернем приложении
+In any child application:
 ```js
 import { ShareContextProvider } from 'tool-microfrontend-shared-state';
 
 const { key, time } = React.useContext(ShareContextProvider);
 ```
 
-## Сборка и обновление
+## Build and update
 
-1. Установить зависимости
+1. Install dependencies:
 ```sh
 npm install
 ```
-2. Внести изменения
-3. Сбилдить
+2. Make changes
+3. Build:
 ```sh
 npx webpack
 ```
 
-## Автор
-Дубов В.C.
+## Author
+Dubov V.S.
 vitaliy.dubov@bolide.ai
