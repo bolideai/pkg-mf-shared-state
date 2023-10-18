@@ -19,16 +19,12 @@ module.exports = {
         react: 'react'
     },
     module: {
-        rules: [{
-                test: /\.css/,
-                use: ['style-loader', 'css-loader'],
-            },
+        rules: [
             {
                 test: /\.(ts|tsx)?$/,
                 use: ['ts-loader'],
                 exclude: /node_modules/
             },
-
         ]
     }
 }
