@@ -1,18 +1,18 @@
 # Bolideai Microservice Share State
 
-Provider for passing states between micro-frontends in Module Federation 
+Provider for passing states between micro-frontends in Module Federation
 
 ## Installation
 
 ```sh
-npm i tool-microfrontend-shared-state
+npm i @bolideai/mf-shared-state
 ```
 
 ## Usage
 
 In parent application:
 ```js
-import { ShareContextProvider } from 'tool-microfrontend-shared-state';
+import { ShareContextProvider } from '@bolideai/mf-shared-state';
 
 <ShareContextProvider.Provider value={{ key: 12345, time: Date.now() }}>
     ...
@@ -22,7 +22,7 @@ import { ShareContextProvider } from 'tool-microfrontend-shared-state';
 
 In any child application:
 ```js
-import { ShareContextProvider } from 'tool-microfrontend-shared-state';
+import { ShareContextProvider } from '@bolideai/mf-shared-state';
 
 const { key, time } = React.useContext(ShareContextProvider);
 ```
