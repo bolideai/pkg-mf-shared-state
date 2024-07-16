@@ -40,5 +40,5 @@ npx webpack
 ```
 
 ## Author
-Dubov V.S.
-vitaliy.dubov@bolide.ai
+Dubov V.
+vitaliy.dubov@searchanise.io 
